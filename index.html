@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Website</title>
+    <link rel="stylesheet" href="cs/head.css">
+    <link rel="stylesheet" href="cs/mediaqueries4.css">
+    <link rel="stylesheet" href="cs/mediaqueries3.css">
+    <link rel="stylesheet" href="cs/mediaqueries2.css">
+    <link rel="stylesheet" href="cs/mediaqueries1.css">
+
+
+    <style>
+        .bg
+        {
+            background-image: url("images/bg.jpg");
+        }
+
+        .bg img
+        {
+            width: 100%;
+            height: auto;
+        }
+
+        .menu
+{
+    background-image: url("images/navbg.png");
+    background-repeat:round;
+}
+.menu img{
+    width: 100%;
+    height:min-content;
+}
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="bg">
+
+        <!-- Header (left[logo] right[smicons] emailid) -->
+        <div class="header" id="header">
+            <div class="left" id="left">
+                <img src="images/logo.svg">
+            </div>
+            <div class="middiv"></div>
+
+            <div class="right">
+                <div class="smiconsdiv1">
+                    <div class="smicons1" id="smicons1"><a href="https://www.facebook.com"><img src="images/fb1.png"></a></div>
+                    <div class="smicons2" id="smicons2"><a href="https://twitter.com"><img src="images/twitter1.png"></a></div>
+                    <div class="smicons3" id="smicons3"><a href="https://pinterest.com"><img src="images/pinterest1.png"></a></div>
+                    <div class="smicons4" id="smicons4"><a href="https://web.dev/googleplus"><img src="images/gplus1.png"></a></div>
+                </div>
+
+                <div class="smiconsdiv2">
+                    <div class="gmailid">
+                        <div class="manuser" id="manuser" ><img src="images/manuser.png"></div>
+                        <a href="https://accounts.google.com/">Sign-in</a>  &nbsp;/&nbsp; 
+                        <a href="https://support.google.com/"> Sign-up </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Div 0 (BG, Welcome to hotely),  .btn0  -->
+        <div class="div0" >
+            <div class="navbar" id="navbar">
+            <div class="menu" id="menu">
+                <div class="nav1" id="nav1">
+                    <ul>
+                        <li> <a href="#" >HOME</a></li>
+                        <li><a href="#"> ABOUT US</a></li>
+                        <li><a href="#">ROOMS</a></li>
+                        <li><a href="#">SERVICES</a></li>
+                        <li><a href="#">GALLERY</a></li>
+                        <li><a href="#"> BLOG  </a></li>
+                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#"> <td><font color="white">BOOK NOW</font></a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            <div class="divp"></div>
+            <div class="divp"></div>
+            <div class="divh1" id="divh1">
+                Welcome to Hotely
+            </div>
+                <div class="divp" id="divp">
+                    <div class="arrowbox1" id="arrowbox1"><img src="images/arrow1.png"></div>
+                    THE PLACE WHERE YOU LOOKING TO
+                    <div class="arrowbox2" id="arrowbox2"><img src="images/arrow1.png"></div>
+                </div>
+
+                <div class="btndiv" id="btndiv">
+                    <div class="btn0" id="btn0">EXPLORE NOW
+                        <div class="arrowbox" id="arrowbox">
+                            <img src="images/arrow2.png">
+                        </div>
+                    </div> 
+                </div>
+        </div>
+
+        <!--Div 1 (Email, roomtype, checkin-out, guest, booknow), .box1(div), .btn2 ,.btn3 ,.btn4 ,.btn5 ,.btn6 ,.btn7, .btn8(buttons)-->      
+        <div class="div1" id="div1" >
+            <div class="boxx1"   >
+                <div class="inputdiv1" id="inputdiv1">
+                    <div class="btnn1" id="btnn1">
+                        <div class="text1" id="text1">Email</div> 
+                        <div class="btnnimg1" id="btnnimg1"> <img src="images/about.png"></div>
+                    </div>
+
+                    <div class="btnn2" id="btnn2">
+                        <div class="text2" id="text2">Room Type</div> 
+                        <div class="btnnimg2" id="btnnimg2"> <img src="images/about.png"></div>
+                    </div>
+
+                    <div class="btnn3" id="btnn3">
+                        <div class="text3" id="text3">Check-in</div> 
+                        <div class="btnnimg3" id="btnnimg3"> <img src="images/about.png"></div>
+                    </div>
+
+                    <div class="btnn4" id="btnn4">
+                        <div class="text4" id="text4">Check-out</div> 
+                        <div class="btnnimg4" id="btnnimg4"> <img src="images/about.png"></div>
+                    </div>
+
+                    <div class="btnn5" id="btnn5">
+                        <div class="text3" id="text5">Guest</div> 
+                        <div class="btnnimg5" id="btnnimg5"> <img src="images/about.png"></div>
+                    </div>
+                    
+                 </div>
+                 
+                <div class="inputdiv2" id="inputdiv2">
+                    <input type="email" placeholder="Please enter your E-mail" id="inputbtn" required="@gmail.com">
+                    
+                    <input list="room" name="room" placeholder="Select a room " id="inputbtn">
+                    <datalist id="room">
+                    <option value="Single">
+                    <option value="Double">
+                    <option value="Triple">
+                    <option value="Quad">
+                    </datalist>
+
+                    <input type="date" placeholder="Check-in" id="inputbtn">
+                    <input type="date" placeholder="Check-in" id="inputbtn">
+
+                    <input type="number" placeholder="Guest" id="inputbtn" >
+                
+                    <button class="btnn8" >Book Now </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Div 2 (Welcome to hotel all work), .symbol1, .box1 ,.box2 ,.box3(images),.btn1 -->
+        <div class="div2">
+            <div class="div2h1">WELCOME TO HOTEL</div>
+            
+            <div class="symbol1" id="symbol1">
+                <div class="symbolimg1"><img src="images/thumb.png"></div>
+            </div>
+
+            <div class="div2p">
+                <div class="div2pinbox" id="div2inbox">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type electronic
+                </div>
+            </div>
+
+            <div class="div2imgbox">
+            <div class="box1" id="box1"><img src="images/img1.png" width="100%" height="auto"></div> 
+            <div class="box2" id="box2"><img src="images/img2.png" width="100%" height="auto"></div>
+            <div class="box3" id="box3"><img src="images/img3.png" width="100%" height="auto"></div>
+            </div>
+
+            <div class="div2btndiv">
+                <div class="div2btn1" id="div2btn1">
+                    <button class="btn" >View all</button>
+                </div>
+            </div>
+        </div>
+    
+        <!--Div 3 (WHY TO CHOOSE US), .symbol2, .box4 ,.box5 ,.box6 ,.box7 ,.box8 ,.box9(images),.btn2-->
+        <div class="div3">
+            <div class="div3h1" id="div3h1">WHY TO CHOOSE US?</div>
+        
+
+        <div class="symbol2" id="symbol2">
+            <div class="symbolimg2"><img src="images/thumbw.png"></div>
+        </div>
+
+        <div class="div3p">
+            <div class="div3pinbox" id="div3pinbox">
+                &nbsp   ALL   &nbsp  DESERT  &nbsp    COFFEE   &nbsp      CATERING   &nbsp   SERVECES
+            </div>
+        </div>
+
+        <div class="div3imgbox">
+            <div class="div3imginbox">
+
+            <div class="box4"><img src="images/img4.png" width="100%" height="auto"></div> 
+            <div class="box5"><img src="images/img5.png" width="100%" height="auto"></div>
+            <div class="box6"><img src="images/img6.png" width="100%" height="auto"></div>
+            <div class="box7"><img src="images/img7.png" width="100%" height="auto"></div> 
+            <div class="box8"><img src="images/img8.png" width="100%" height="auto"></div>
+            <div class="box9"><img src="images/img9.png" width="100%" height="auto"></div>
+            </div>
+        </div>
+
+        <div class="div3btndiv">
+            <div class="div3btn1" id="div3btn1">
+                <button class="btn" >View all</button>
+            </div>
+        </div>
+        </div>
+
+    <!--    Div 4 (Upcomming Events), .symbol3, .box10 ,.box11 ,.box12(images),.box13 ,.box15 ,.box17(para[Date]),.box14 ,.box16 ,.box18(para[lorem]),.btn3 -->
+
+        <div class="div4">
+            <div class="div4p" >
+                <div class="div4pinbox" id="div4inbox">Upcomming</div>
+            </div>
+            <div class="div4h1" id="div4h1">Events</div>
+           
+            <div class="symbol3" id="symbol3">
+                <div class="symbolimg3"><img src="images/thumb.png"></div>
+            </div>
+
+            <div class="div4imgbox">
+                    <div class="box10"><img src="images/img10.png" width="100%" height="auto">
+                        <div class="box10text">
+                            <div class="box10date"><b>25</b><br>APRIL</div>
+                            <div class="box10para">Lorem Ipsum is simply dummy text of the printing and.</div>
+                        </div></div>
+                    <div class="box11"><img src="images/img11.png" width="100%" height="auto">
+                        <div class="box11text">
+                            <div class="box11date"><b>15</b><br>MAY</div>
+                            <div class="box11para">Lorem Ipsum is simply dummy text of the printing and.</div>
+                        </div></div>
+                    <div class="box12"><img src="images/img12.png" width="100%" height="auto">
+                        <div class="box12text">
+                            <div class="box12date"><b>22</b><br>June</div>
+                            <div class="box12para">Lorem Ipsum is simply dummy text of the printing and.</div>
+                        </div></div>
+            </div>
+            </div>
+        
+            <!--Div 5 (Footer), .box19 ,.box20 ,.box21 ,.box22(Add, info, my acc, newsletter), .sicons(social media icons)-->
+            <div class="div5">
+                <div class="box19">
+                    <div class="div5h1" id="div5h1">ADDRESS</div>
+                    <div class="box19p1">
+                        <div class="box19icon1" id="box19icon1"><img src="images/location.png" width="100%" height="auto"></div>
+                        <div class="box19text2" id="box19text2">&nbsp;&nbsp;Hotel in Jaipur</div>
+                    </div>
+                    <div class="box19p2">
+                        <div class="box19icon2" id="box19icon2"><img src="images/call.png" width="100%" height="auto"></div>
+                        <div class="box19text2" id="box19text2">&nbsp;&nbsp;50123456789</div>
+                    </div>
+                    <div class="box19p3">
+                        <div class="box19icon3" id="box19icon3"><img src="images/email.png" width="100%" height="auto"></div>
+                        <div class="box19text3" id="box19text3"><a href=""> &nbsp; hotel@gmail.com</a></div>
+                    </div>
+                </div>
+        
+        
+                <div class="box20">
+                    <div class="div5h2" id="div5h2">INFORMATION</div>
+                    <div class="box20p1" id="box20p1"><a  href="">About Us</a> </div>
+                    <div class="box20p2" id="box20p2"><a href="">Delivery Information</a></div>
+                    <div class="box20p3" id="box20p3"><a  href="">Privacy Policy</a></div>
+                    <div class="box20p4" id="box20p4"><a  href="">Terms & Conditions</a></div>
+                    <div class="box20p5" id="box20p5"><a  href="">Site Map</a></div> 
+                </div>
+        
+        
+        
+                <div class="box21">
+                    <div class="div5h3" id="div5h3">MY ACCOUNT</div>
+                    <div class="box21p1" id="box21p1"><a  href="">My Account</a></div>
+                    <div class="box21p2" id="box21p2"><a  href="">Order History</a></div>
+                    <div class="box21p3" id="box21p3"><a  href="">Wish List</a></div>
+                    <div class="box21p4" id="box21p4"><a  href="">Newsletter</a></div>
+                    <div class="box21p5" id="box21p5"><a  href="">Returns</a></div> 
+                </div>
+        
+        
+        
+                <div class="box22">
+                    <div class="div5h4" id="div5h4">NEWS LETTER</div>
+                    <div class="box22p1" id="box22p1">Subscribe to our newsletter to latest news, tips, and advice.</div>
+                    <div class="box22p2">
+                        <div class="box22text"><input type="text" id="text"></div>
+                        <div class="box22icon" id="box22icon">Send</div>
+                    </div>
+                    <div class="box22p3" id="box22p3">
+                        <div class="sicons1" id="sicons1"><a href="https://www.facebook.com"><img src="images/fb.png" width="100%" height="auto" alt="Facebook"></a></div>
+                        <div class="sicons2" id="sicons2"><a href="https://twitter.com"><img src="images/twitter.png" width="100%" height="auto" alt="Twitter"></a></div>
+                        <div class="sicons3" id="sicons3"><a href="https://web.dev/googleplus"><img src="images/gplus.png" width="100%" height="auto" alt="Gplus"></a></div>
+                    </div>
+                </div>
+            </div>
+         <!--Div 6 (Footer), All right reserved-->
+                <div class="div6"><div class="div6h1" id="div6h1">© 2018 . Hotel. All rights .</div>
+                    </div>
+           
+            
+
+</div>
+</div>
+</body>
+</html>
